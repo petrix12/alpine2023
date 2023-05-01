@@ -1,0 +1,27 @@
+<!-- Curso Alpine JS desde cero -->
+<!-- https://www.youtube.com/playlist?list=PLZ2ovOgdI-kVcpcljnRe7heDP-YVrk1ki -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine VIII</title>
+
+    <!-- Alpine.js -->
+    <!-- https://github.com/alpinejs/alpine -->
+    <!-- https://alpinejs.dev/start-here -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+    <!-- https://alpinejs.dev -->
+    <div x-data="{ msg1: null, msg2: null, msg3: null, msg4: null, msg5: null, msg6: null }">
+        <input type="text" x-model="msg1" @keydown="console.log(msg1)"><br>
+        <input type="text" x-model="msg2" @keydown.enter="console.log(msg2)"><br>
+        <input type="text" x-model="msg3" @keydown.escape="console.log(msg3)"><br>
+        <input type="text" x-model="msg4" @keydown.arrow-down="console.log(msg4)"><br>
+        <input type="text" x-model="msg5" @keydown.arrow-up="console.log(msg5)"><br>
+        <input type="text" x-model="msg6" @keydown.ctrl.a="console.log(msg6)"><br>
+    </div>
+</body>
+</html>
